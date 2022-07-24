@@ -1,6 +1,7 @@
 # Maxim Skrylnicov
-## Discord: Osrovetianin#9445
-## Tg: Ostrov322
+### Contacts:
+##### Discord: Osrovetianin#9445
+##### Tg: Ostrov322
 ### About myself:
 ##### I want to learn Js
 ### Work experience:
