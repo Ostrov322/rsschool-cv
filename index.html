@@ -1,69 +1,97 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cv</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="assets/favicon/favicon.ico">
-    <link rel="preconnect" href="https://fonts.gstatic.com">  
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap" rel="stylesheet">
-    <nav class="nav">
-        <ul class="nav-list">
-          <li class="nav-item"><a href="#Contacts" class="nav-link"> Contacts </a></li>
-          <li class="nav-item"><a href="#About myself" class="nav-link"> About myself </a></li>
-          <li class="nav-item"><a href="#Work experience" class="nav-link"> Work experience </a></li>
-          <li class="nav-item"><a href="#Skills" class="nav-link"> Skills </a></li>
-          <li class="nav-item"><a href="#Cours" class="nav-link"> Cours </a></li>
-          <li class="nav-item"><a href="#Code Example" class="nav-link"> Code Example </a></li>
-        </ul>
-      </nav>
-</head>
-<body>
-    <header class = "header">
-        <div class = "container"></div>
-    </header>
-    <main class = "Main">
-        <div class = "container">
-            <section class="section" id="Profile">
-            <h1 class="section-title">Maxim Skrylnicov</h1>
-            </section>
-            <section class="section" id="Contacts">
-            <h2 class="section-title">Contacts:</h2>
-            <p>Discord: Osrovetianin#9445</p>
-            <p>Tg: Ostrov322</p>
-            </section>
-            <section class="section" id="About myself">
-                <h2 class="section-title">About myself:</h2>
-                <p>I want to learn Js</p>
-            </section>
-            <section class="section" id="Work experience">
-                <h2 class="section-title">Work experience:</h2>
-                <p>None</p>
-            </section>
-            <section class="section" id="Skills">
-                <h2 class="section-title">Skills:</h2>
-                <p>Js</p>
-            </section>
-            <section class="section" id="Cours">
-                <h2 class="section-title">Cours:</h2>
-                <p>Yandex.practicum Js</p>
-            </section>
-            <section class="section" id="Code Example">
-                <h2 class="section-title">Code Example:</h2>
-                <p><code>function sum(a, b) {
-                    return a + b;<Br>
-                  }<Br>
-                    <Br>
-                  let result = sum(1, 2);<Br>
-                  alert( result );</code></p>
-            </section>
-        </div>
-    </main>
-    <footer class="footer">
-        <div class = "container"></div>
-    </footer>
-    <!-- <img src="assets/img/3.jpg" alt="my photo"> -->
-</body>
-</html>
+body{
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    font-size: 20px;
+    font-weight: 350;
+    line-height: 1;
+    color: rgb(0, 102, 255);
+    margin: 0; padding: 0;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+nav{
+  background-color: #f1ffff;
+}
+* {
+    box-sizing: border-box;
+  }
+  header{
+    border: 1px solid rgb(0, 204, 255);
+}
+main{
+    border: 1px solid rgb(0, 204, 255);
+}
+footer{
+    border: 1px solid rgb(0, 204, 255);
+    background-color: #f1ffff;
+}
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    padding: 0 20px;
+    line-height: 50px;
+  }
+html {
+    scroll-behavior: smooth; 
+  }
+.section-item a {
+    color: #829985;
+    text-decoration: none;  
+    transition: color 0.5s;
+  }
+.section-item a:hover {
+    color: #4d2323;
+  }
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .section {
+    width: 50%;
+  }
+  @media (max-width: 768px) {
+    .section {
+      width: 100%;
+    }
+  }
+.link {
+    text-decoration: none;
+    color: #829985;
+    transition: color 0.5s;
+  }
+  
+.link:hover {
+    color: #5d7260;
+  }
+.section-title {
+    font-size: 35px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: #0059ff;
+    line-height: 1;
+  }
+.nav-link{
+  text-decoration: none;
+    font-size: 23px;
+    letter-spacing: 2px;
+    font-weight:bold;
+    white-space: pre-wrap;
+
+}
+.footer-link{
+  text-decoration: none;
+  font-size: 23px;
+  letter-spacing: 2px;
+  font-weight:bold;
+  white-space: pre-wrap;
+}
